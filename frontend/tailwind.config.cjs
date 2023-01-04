@@ -17,6 +17,18 @@ module.exports = {
         "primary-600": ["Poppins", "sans-serif"],
         "primary-400": ["Helvetica", "sans-serif"],
       },
+      keyframes: {
+        "infinite-scroll-down": {
+          // "0%": { transform: "translateY(0) scale(1.5)" },
+          // "25%": { transform: "translateY(200%) scale(1.5)" },
+          // "50%": { transform: "translateY(-100%) scale(1.5)" },
+          "100%": { transform: "translateY(300%) scale(1.25)", opacity: "0.5" },
+          "0%": { transform: "translateY(0) scale(1.25)" },
+        },
+      },
+      animation: {
+        "infinite-scroll-down": "infinite-scroll-down 1s ease-in-out infinite",
+      },
     },
   },
   plugins: [],

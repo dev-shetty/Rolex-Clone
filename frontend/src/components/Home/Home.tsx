@@ -1,3 +1,4 @@
+import { FaAngleDown } from "react-icons/fa"
 function Home() {
   return (
     <div className="background-hero flex justify-center items-center">
@@ -8,6 +9,9 @@ function Home() {
         <p className="tracking-[0.3rem] lg:tracking-[0.5rem] text-xs md:text-sm lg:text-lg font-[100] text-primary-300">
           THE REALIZATION OF AN IDEAL
         </p>
+      </div>
+      <div className="absolute z-10 bottom-4 left-1/2 -translate-x-1/2 text-primary-100 overflow-hidden h-12">
+        <FaAngleDown className="scale-125 animate-infinite-scroll-down" />
       </div>
     </div>
   )
