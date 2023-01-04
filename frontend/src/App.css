@@ -22,3 +22,7 @@ body,
   inset: 0;
   z-index: 5;
 }
+/* 
+* {
+  outline: 1px solid limegreen;
+} */
