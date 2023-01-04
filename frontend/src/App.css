@@ -1,5 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html,
+body,
+#root {
+  height: 100%;
+}
+.background-hero {
+  height: 100%;
+  background-size: cover;
+  background-image: url("background/Rolex_Main_BG.jpg");
+  background-position: center;
+  position: relative;
+}
+.background-hero::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  inset: 0;
+  z-index: 5;
+}
