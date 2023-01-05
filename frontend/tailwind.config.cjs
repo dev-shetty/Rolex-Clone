@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         "primary-900": "#000000",
         "primary-800": "#212121",
+        "primary-600": "#777777",
         "primary-400": "#c1c1c1",
         "primary-300": "#d4d4d4",
         "primary-200": "#f7f7f7",
@@ -28,6 +29,9 @@ module.exports = {
       },
       animation: {
         "infinite-scroll-down": "infinite-scroll-down 1s ease-in-out infinite",
+      },
+      backgroundImage: {
+        "blur-watch": "url('background/Watch_Blur_BG.webp')",
       },
     },
   },

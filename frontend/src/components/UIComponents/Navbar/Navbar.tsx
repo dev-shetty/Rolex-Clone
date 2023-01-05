@@ -1,6 +1,6 @@
+import { useState } from "react"
 import { HiBars2 } from "react-icons/hi2"
 import { BiHeart, BiSearch } from "react-icons/bi"
-import { useState } from "react"
 
 function Navbar() {
   const [logo, setLogo] = useState("branding/white_logo.svg")
