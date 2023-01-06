@@ -2,6 +2,7 @@ import About from "../components/About/About"
 import Discover from "../components/Discover/Discover"
 import Home from "../components/Home/Home"
 import Quest from "../components/Quest/Quest"
+import Share from "../components/UIComponents/Share/Share"
 import WatchList from "../components/Watches/WatchList"
 
 function HomePage() {
@@ -12,6 +13,7 @@ function HomePage() {
       <WatchList />
       <Quest />
       <Discover />
+      <Share />
     </div>
   )
 }

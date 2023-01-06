@@ -22,26 +22,26 @@ function Discover() {
           <div className="rounded-2xl overflow-hidden">
             <img
               src="discover/Rolex-and-cinema.jpg"
-              alt="New Watches 2022"
+              alt="Rolex and Cinema"
               className="hover:scale-105 transition-all duration-500"
             />
           </div>
           <div className="flex flex-col my-2">
-            <p className="font-bold tracking-widest">NEW WATCHES 2022</p>
-            <p className="text-primary-600 -mt-1">Rolex Collection</p>
+            <p className="font-bold tracking-widest">ROLEX AND CINEMA</p>
+            <p className="text-primary-600 -mt-1">World of Rolex</p>
           </div>
         </div>
         <div>
           <div className="rounded-2xl overflow-hidden">
             <img
               src="discover/Rolex-and-the-arts.jpg"
-              alt="New Watches 2022"
+              alt="Rolex and the arts"
               className="hover:scale-105 transition-all duration-500"
             />
           </div>
           <div className="flex flex-col my-2">
-            <p className="font-bold tracking-widest">NEW WATCHES 2022</p>
-            <p className="text-primary-600 -mt-1">Rolex Collection</p>
+            <p className="font-bold tracking-widest">ROLEX AND THE ARTS</p>
+            <p className="text-primary-600 -mt-1">World of Rolex</p>
           </div>
         </div>
       </div>

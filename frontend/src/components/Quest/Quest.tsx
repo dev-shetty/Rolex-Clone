@@ -1,4 +1,4 @@
-import { BiExit } from "react-icons/all"
+import { BiExit } from "react-icons/bi"
 
 function Quest() {
   return (
