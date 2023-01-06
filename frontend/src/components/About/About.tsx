@@ -14,11 +14,13 @@ function About() {
           watches to find a perfect combination of style and functionality.
         </p>
       </div>
-      <div className="flex flex-col mt-2 sm:mt-0 sm:flex-row gap-6 text-secondary-400 items-center">
-        <button className="border-[1px] border-secondary-400 px-4 py-2 rounded-full">
+      <div className="flex flex-col mt-2 sm:mt-0 sm:flex-row gap-6 text-secondary-400 items-center transition-colors duration-300">
+        <button className="border-[1px] border-secondary-400 px-4 py-2 rounded-full hover:bg-secondary-400 hover:text-primary-100">
           Watch Finder
         </button>
-        <button>Configure your watch</button>
+        <button className="hover:text-secondary-200">
+          Configure your watch
+        </button>
       </div>
     </div>
   )
