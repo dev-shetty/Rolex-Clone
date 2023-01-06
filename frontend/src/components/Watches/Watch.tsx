@@ -1,13 +1,23 @@
-function Watch() {
+interface props {
+  img: string
+  name: string
+  desc: string
+}
+
+function Watch({ img, name, desc }: props) {
   return (
-    <div className="py-6 basis-2/3">
-      <div>
-        <img src="products/Cellini.webp" alt="Cellini" />
+    <div className="my-4 basis-[40%] lg:basis-[30%] shrink-0">
+      <div className="overflow-hidden rounded-3xl">
+        <img
+          src={img}
+          alt={name}
+          className="h-[75%] hover:scale-105 transition-all duration-500"
+        />
       </div>
       <div>
-        <div className="my-2">
-          <p className="font-bold">CELLINI</p>
-          <p className="text-primary-600 text-sm">The classical watch</p>
+        <div className="my-2 leading-4">
+          <p className="font-bold uppercase">{name}</p>
+          <p className="text-primary-600 text-sm">{desc}</p>
         </div>
       </div>
     </div>
