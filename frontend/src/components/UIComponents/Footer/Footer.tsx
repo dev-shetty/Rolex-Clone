@@ -1,7 +1,8 @@
-
+import { useState } from "react"
 import {
   BiExit,
   BiWorld,
+  CgHome,
   FaAngleDown,
   FaAngleUp,
   FaFacebook,
@@ -15,7 +16,14 @@ import {
 } from "react-icons/all"
 
 function Footer() {
+  const [accessibility, setAccessibility] = useState<boolean>(false)
+  const [isContrast, setIsContrast] = useState<boolean>(false)
+  const [isAnimations, setIsAnimations] = useState<boolean>(false)
 
+  const handleAccessibility = () => {
+    if (accessibility) setAccessibility(false)
+    else setAccessibility(true)
+  }
 
   return (
     <footer className="bg-primary-800 text-primary-300 text-sm transition-colors duration-500 pt-8">
@@ -24,13 +32,56 @@ function Footer() {
           <BiWorld />
           <p>Languages</p>
         </div>
-        <div className="with-icons">
+        <div className="with-icons" onClick={handleAccessibility}>
+          <p>Accessibility</p>
           <FaAngleDown />
-          <p>Accesibility</p>
         </div>
       </div>
-
       <div className="w-7/12 mx-auto grid md:grid-cols-3 gap-4 pb-24">
+        {accessibility && (
+          <div className="col-span-3 flex flex-col md:flex-row mx-auto md:mx-0 md:justify-between my-4 gap-4">
+            <div className="flex flex-col gap-2">
+              <p className="font-bold">INCREASE CONTRAST</p>
+              <div className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  name="contrast"
+                  id="contrast"
+                  checked={isContrast}
+                  className="switch"
+                  onChange={() =>
+                    isContrast ? setIsContrast(false) : setIsContrast(true)
+                  }
+                />
+                <p>{isContrast ? "Enabled" : "Disabled"}</p>
+              </div>
+            </div>
+            <div className="flex flex-col gap-2">
+              <p className="font-bold">REDUCE ANIMATIONS</p>
+              <div className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  name="animations"
+                  id="animations"
+                  checked={isAnimations}
+                  className="switch"
+                  onChange={() =>
+                    isAnimations
+                      ? setIsAnimations(false)
+                      : setIsAnimations(true)
+                  }
+                />
+                <p>{isAnimations ? "Enabled" : "Disabled"}</p>
+              </div>
+            </div>
+            <div className="flex flex-col gap-2">
+              <p className="font-bold">ACCESSIBILITY STATEMENT</p>
+              <div className="flex items-center gap-2">
+                <p>Read our statement</p>
+              </div>
+            </div>
+          </div>
+        )}
         <div className="flex flex-col gap-4">
           <div>
             <p className="footer-title">ROLEX WATCHES</p>

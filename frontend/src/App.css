@@ -73,6 +73,27 @@ footer ul {
   @apply absolute top-[98%] bottom-0 left-0 right-0 bg-primary-600;
 }
 
-/* * {
-  outline: 1px solid limegreen;
-} */
+/* Toggle Switch */
+.switch {
+  all: unset;
+  height: 1rem;
+  outline: 1px solid white;
+  width: 2rem;
+  border-radius: 100vw;
+  position: relative;
+}
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  height: 0.8rem;
+  width: 45%;
+  border-radius: 50%;
+  @apply bg-primary-300;
+  transition: 300ms ease-in-out;
+}
+.switch:checked::after {
+  left: 50%;
+}
