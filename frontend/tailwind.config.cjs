@@ -14,6 +14,7 @@ module.exports = {
         "secondary-200": "#12784a80",
         "secondary-400": "#12784a",
         "tertiary-400": "#0000ee",
+        "accent-400": "#af862f",
       },
       fontFamily: {
         "primary-600": ["Poppins", "sans-serif"],

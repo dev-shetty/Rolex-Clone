@@ -1,6 +1,6 @@
 function Discover() {
   return (
-    <div className="flex flex-col gap-4 mx-4 md:w-3/5 md:mx-auto">
+    <div className="flex flex-col gap-4 mx-4 md:w-3/5 md:mx-auto my-16">
       <div>
         <h3>Discovering Rolex</h3>
       </div>
