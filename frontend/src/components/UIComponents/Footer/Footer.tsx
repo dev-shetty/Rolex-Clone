@@ -2,7 +2,6 @@ import { useState } from "react"
 import {
   BiExit,
   BiWorld,
-  CgHome,
   FaAngleDown,
   FaAngleUp,
   FaFacebook,
@@ -14,13 +13,11 @@ import {
   FaYoutube,
   SiWechat,
 } from "react-icons/all"
-import LanguageModal from "../Modals/LanguageModal"
 
 function Footer() {
   const [accessibility, setAccessibility] = useState<boolean>(false)
   const [isContrast, setIsContrast] = useState<boolean>(false)
   const [isAnimations, setIsAnimations] = useState<boolean>(false)
-  const [languagesModal, setLanguagesModal] = useState<boolean>(true)
 
   const handleAccessibility = () => {
     if (accessibility) setAccessibility(false)
@@ -201,9 +198,6 @@ function Footer() {
       >
         <FaAngleUp />
       </div>
-      {languagesModal && (
-        <LanguageModal setLanguagesModal={setLanguagesModal} />
-      )}
     </footer>
   )
 }
