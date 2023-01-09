@@ -19,24 +19,39 @@ function WatchList() {
           desc="The classical watch"
         />
         <Watch
-          img="products/Cellini.webp"
-          name="Cellini"
-          desc="The classical watch"
+          img="products/Cosmograph-DayTona.webp"
+          name="Cosmograph Daytona"
+          desc="Born to race"
         />
         <Watch
-          img="products/Cellini.webp"
-          name="Cellini"
-          desc="The classical watch"
+          img="products/Date-Just.webp"
+          name="Datejust"
+          desc="The classic watch of reference"
         />
         <Watch
-          img="products/Cellini.webp"
-          name="Cellini"
-          desc="The classical watch"
+          img="products/GMT-Master-II.webp"
+          name="GMT-Master II"
+          desc="The cosmopolitan watch"
         />
         <Watch
-          img="products/Cellini.webp"
-          name="Cellini"
-          desc="The classical watch"
+          img="products/Air-King.webp"
+          name="Air King"
+          desc="A homage to aviation"
+        />
+        <Watch
+          img="products/Day-Date.webp"
+          name="Day-Date"
+          desc="The realization of an ideal"
+        />
+        <Watch
+          img="products/Sea-Dweller.webp"
+          name="Sea-Dweller"
+          desc="The watch that conquered the deep"
+        />
+        <Watch
+          img="products/Sky-Dweller.webp"
+          name="Sky-Dweller"
+          desc="Keeping track of time across the world"
         />
       </div>
     </div>
