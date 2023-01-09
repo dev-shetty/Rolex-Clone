@@ -82,6 +82,9 @@ footer ul {
   border-radius: 100vw;
   position: relative;
 }
+.switch:hover + p {
+  @apply text-accent-400;
+}
 .switch::after {
   content: "";
   position: absolute;

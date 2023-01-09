@@ -14,11 +14,13 @@ import {
   FaYoutube,
   SiWechat,
 } from "react-icons/all"
+import LanguageModal from "../Modals/LanguageModal"
 
 function Footer() {
   const [accessibility, setAccessibility] = useState<boolean>(false)
   const [isContrast, setIsContrast] = useState<boolean>(false)
   const [isAnimations, setIsAnimations] = useState<boolean>(false)
+  const [languagesModal, setLanguagesModal] = useState<boolean>(true)
 
   const handleAccessibility = () => {
     if (accessibility) setAccessibility(false)
@@ -37,9 +39,9 @@ function Footer() {
           <FaAngleDown />
         </div>
       </div>
-      <div className="w-7/12 mx-auto grid md:grid-cols-3 gap-4 pb-24">
+      <div className="w-7/12 mx-auto md:grid md:grid-cols-3 gap-4 pb-24">
         {accessibility && (
-          <div className="col-span-3 flex flex-col md:flex-row mx-auto md:mx-0 md:justify-between my-4 gap-4">
+          <div className="col-span-3 flex flex-col md:flex-row mx-auto md:mx-0 md:justify-between my-8 md:my-4 gap-4">
             <div className="flex flex-col gap-2">
               <p className="font-bold">INCREASE CONTRAST</p>
               <div className="flex items-center gap-2">
@@ -199,6 +201,9 @@ function Footer() {
       >
         <FaAngleUp />
       </div>
+      {languagesModal && (
+        <LanguageModal setLanguagesModal={setLanguagesModal} />
+      )}
     </footer>
   )
 }
