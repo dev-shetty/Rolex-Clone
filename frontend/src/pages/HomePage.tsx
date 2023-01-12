@@ -3,6 +3,7 @@ import Discover from "../components/Discover/Discover"
 import Home from "../components/Home/Home"
 import Quest from "../components/Quest/Quest"
 import Footer from "../components/UIComponents/Footer/Footer"
+import MenuModal from "../components/UIComponents/Modals/MenuModal"
 import Share from "../components/UIComponents/Share/Share"
 import WatchList from "../components/Watches/WatchList"
 
