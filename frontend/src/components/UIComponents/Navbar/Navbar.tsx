@@ -1,9 +1,12 @@
 import { useContext, useState } from "react"
 import { HiBars2 } from "react-icons/hi2"
 import { BiHeart, BiSearch } from "react-icons/bi"
+import MenuBarContext from "../../../context/MenuBarContext"
 import SearchModal from "../Modals/SearchModal"
+import MenuModal from "../Modals/MenuModal"
 
 function Navbar() {
+  const { menu, setMenu } = useContext(MenuBarContext)
   const [logo, setLogo] = useState("branding/white_logo.svg")
   const [search, setSearch] = useState(false)
 
@@ -46,6 +49,7 @@ function Navbar() {
           </li>
         </ul>
       </nav>
+      {menu && <MenuModal />}
       {search && <SearchModal setSearch={setSearch} />}
     </>
   )

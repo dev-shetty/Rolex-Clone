@@ -2,15 +2,10 @@ import React, { useState } from "react"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Navbar from "./components/UIComponents/Navbar/Navbar"
 import HomePage from "./pages/HomePage"
+import MenuBarContext from "./context/MenuBarContext"
 import "./App.css"
 
-type MenuBar = {
-  menu: boolean
-  setMenu: any
-}
-
 function App() {
-  const MenuBarContext = React.createContext<Partial<MenuBar>>({})
   const [menu, setMenu] = useState<boolean>(false)
   return (
     <MenuBarContext.Provider value={{ menu, setMenu }}>
