@@ -40,6 +40,12 @@ html {
   z-index: 5;
 }
 
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+.no-scroll {
+}
+
 .background-quest:hover > div > button {
   @apply bg-primary-100 text-secondary-400;
 }
@@ -61,6 +67,9 @@ html {
 }
 
 footer :is(p, li, .with-icons):not(.footer-title):hover {
+  @apply text-accent-400 transition-colors duration-500 cursor-pointer;
+}
+.menu-items :is(p, li, .with-icons):hover {
   @apply text-accent-400 transition-colors duration-500 cursor-pointer;
 }
 

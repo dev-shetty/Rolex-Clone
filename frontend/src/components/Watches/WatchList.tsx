@@ -7,7 +7,10 @@ type WatchlistProps = {
 
 function WatchList({ isMenu }: WatchlistProps) {
   return (
-    <div className="my-6 w-11/12 ml-auto select-none" draggable="false">
+    <div
+      className={`my-6 w-11/12 ${isMenu ? "" : "ml-auto"} select-none`}
+      draggable="false"
+    >
       {!isMenu && <WatchHeading />}
       <div
         className={`${

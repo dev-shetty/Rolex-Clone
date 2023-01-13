@@ -9,7 +9,7 @@ function Watch({ img, name, desc, isMenu }: props) {
   return (
     <div
       className={`my-4 basis-[40%] lg:basis-[30%] shrink-0 ${
-        isMenu ? "text-primary-100 text-sm my-0" : ""
+        isMenu ? "text-primary-100 text-xs min-w-[25%] my-0 break-words" : ""
       }`}
     >
       <div className={`overflow-hidden ${isMenu ? "" : "rounded-3xl"}`}>
