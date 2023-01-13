@@ -23,16 +23,20 @@ function Navbar() {
       >
         <ul className="flex place-self-start mt-auto gap-10 w-full">
           <li
-            className="flex items-center gap-2 cursor-pointer"
+            className="flex items-center gap-2 cursor-pointer hover:text-secondary-400"
             onClick={() => setMenu(true)}
           >
             <HiBars2 className="scale-125" />
             <p>Menu</p>
           </li>
           <ul className="gap-4 hidden xl:flex">
-            <li className="cursor-pointer">Watches</li>
-            <li className="cursor-pointer">World of Rolex</li>
-            <li className="cursor-pointer">Store Locator</li>
+            <li className="cursor-pointer hover:text-secondary-400">Watches</li>
+            <li className="cursor-pointer hover:text-secondary-400">
+              World of Rolex
+            </li>
+            <li className="cursor-pointer hover:text-secondary-400">
+              Store Locator
+            </li>
           </ul>
         </ul>
         <ul>
@@ -40,13 +44,13 @@ function Navbar() {
         </ul>
         <ul className="flex place-self-end mt-auto gap-6">
           <li
-            className="flex items-center gap-2 cursor-pointer"
+            className="flex items-center gap-2 cursor-pointer hover:text-secondary-400"
             onClick={() => setSearch(true)}
           >
             <BiSearch />
             <p className="hidden lg:block">Search</p>
           </li>
-          <li className="flex items-center gap-2 cursor-pointer">
+          <li className="flex items-center gap-2 cursor-pointer hover:text-secondary-400">
             <BiHeart />
             <p className="hidden lg:block">Your selection</p>
           </li>
