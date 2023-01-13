@@ -44,12 +44,16 @@ html {
   @apply bg-primary-100 text-secondary-400;
 }
 
-.green-scroll::-webkit-scrollbar {
+.green-scroll::-webkit-scrollbar,
+.white-scroll::-webkit-scrollbar {
   @apply h-[0.4rem] bg-primary-400 cursor-pointer pr-48;
 }
 
 .green-scroll::-webkit-scrollbar-thumb {
   @apply bg-secondary-400 rounded-full;
+}
+.white-scroll::-webkit-scrollbar-thumb {
+  @apply bg-primary-100 rounded-full;
 }
 
 .with-icons {

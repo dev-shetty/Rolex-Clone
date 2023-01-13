@@ -22,7 +22,10 @@ function Navbar() {
         onMouseLeave={() => handleHover(0)}
       >
         <ul className="flex place-self-start mt-auto gap-10 w-full">
-          <li className="flex items-center gap-2 cursor-pointer">
+          <li
+            className="flex items-center gap-2 cursor-pointer"
+            onClick={() => setMenu(true)}
+          >
             <HiBars2 className="scale-125" />
             <p>Menu</p>
           </li>
