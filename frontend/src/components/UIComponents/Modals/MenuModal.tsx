@@ -1,13 +1,15 @@
 import { useContext } from "react"
 import { AiOutlineClose } from "react-icons/ai"
 import { BiWorld } from "react-icons/bi"
+import LanguageModalContext from "../../../context/LangaugageModalContext"
 import MenuBarContext from "../../../context/MenuBarContext"
 import WatchList from "../../Watches/WatchList"
 
 function MenuModal() {
   const { setMenu } = useContext(MenuBarContext)
+  const { setLanguageModal } = useContext(LanguageModalContext)
   return (
-    <div className="fixed flex flex-col top-0 z-20 w-5/6 md:w-2/4 h-full bg-primary-800 pl-16">
+    <div className="fixed flex flex-col top-0 z-20 w-5/6 md:w-2/4 h-full bg-primary-800 text-sm md:text-base pl-4 md:pl-16">
       <div
         className="my-4 cursor-pointer mx-auto"
         onClick={() => setMenu(false)}
@@ -41,7 +43,10 @@ function MenuModal() {
           </div>
         </div>
       </div>
-      <div className="with-icons text-primary-100 hover:text-accent-400 transition-colors duration-500 cursor-pointer py-6">
+      <div
+        className="with-icons text-primary-100 hover:text-accent-400 transition-colors duration-500 cursor-pointer py-6"
+        onClick={() => setLanguageModal(true)}
+      >
         <BiWorld />
         <p>Langauges</p>
       </div>

@@ -11,7 +11,7 @@ import MenuBarContext from "../context/MenuBarContext"
 function HomePage() {
   const { menu } = useContext(MenuBarContext)
   return (
-    <div className={`h-full ${menu ? "overflow-hidden" : ""}`}>
+    <div className="h-full">
       <Home />
       <About />
       <WatchList />

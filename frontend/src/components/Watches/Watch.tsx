@@ -21,8 +21,20 @@ function Watch({ img, name, desc, isMenu }: props) {
       </div>
       <div>
         <div className="my-2 leading-4">
-          <p className="font-bold uppercase">{name}</p>
-          <p className="text-primary-600 text-sm">{desc}</p>
+          <p
+            className={`font-bold uppercase ${
+              isMenu ? "text-[0.25rem] md:text-[0.75rem]" : ""
+            }`}
+          >
+            {name}
+          </p>
+          <p
+            className={`text-primary-600 ${
+              isMenu ? "text-[0.4rem] md:text-[0.8rem]" : "text-sm"
+            }`}
+          >
+            {desc}
+          </p>
         </div>
       </div>
     </div>

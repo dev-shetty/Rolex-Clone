@@ -44,6 +44,8 @@ html {
   display: none;
 }
 .no-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .background-quest:hover > div > button {
@@ -66,9 +68,7 @@ html {
   @apply flex items-center gap-1;
 }
 
-footer :is(p, li, .with-icons):not(.footer-title):hover {
-  @apply text-accent-400 transition-colors duration-500 cursor-pointer;
-}
+footer :is(p, li, .with-icons):not(.footer-title):not(.title):hover,
 .menu-items :is(p, li, .with-icons):hover {
   @apply text-accent-400 transition-colors duration-500 cursor-pointer;
 }
@@ -77,11 +77,13 @@ footer ul {
   @apply flex flex-col gap-1;
 }
 
-.footer-title {
+.footer-title,
+.title {
   @apply pb-0 relative mb-2;
 }
 
-.footer-title::after {
+.footer-title::after,
+.title::after {
   content: "";
   @apply absolute top-[98%] bottom-0 left-0 right-0 bg-primary-600;
 }

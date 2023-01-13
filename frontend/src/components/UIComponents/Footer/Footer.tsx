@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import {
   BiExit,
   BiWorld,
@@ -13,11 +13,15 @@ import {
   FaYoutube,
   SiWechat,
 } from "react-icons/all"
+import LanguageModalContext from "../../../context/LangaugageModalContext"
+import LangaugesModal from "../Modals/LangaugesModal"
 
 function Footer() {
   const [accessibility, setAccessibility] = useState<boolean>(false)
   const [isContrast, setIsContrast] = useState<boolean>(false)
   const [isAnimations, setIsAnimations] = useState<boolean>(false)
+
+  const { languageModal, setLanguageModal } = useContext(LanguageModalContext)
 
   const handleAccessibility = () => {
     if (accessibility) setAccessibility(false)
@@ -27,7 +31,7 @@ function Footer() {
   return (
     <footer className="bg-primary-800 text-primary-300 text-sm transition-colors duration-500 pt-8">
       <div className="flex justify-between mx-16 mb-8">
-        <div className="with-icons">
+        <div className="with-icons" onClick={() => setLanguageModal(true)}>
           <BiWorld />
           <p>Languages</p>
         </div>
@@ -197,6 +201,9 @@ function Footer() {
         onClick={() => window.scrollTo(0, 0)}
       >
         <FaAngleUp />
+      </div>
+      <div className="language-modal">
+        {languageModal && <LangaugesModal />}
       </div>
     </footer>
   )
