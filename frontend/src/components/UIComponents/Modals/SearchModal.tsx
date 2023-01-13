@@ -4,15 +4,15 @@ import { IoLocationSharp } from "react-icons/io5"
 
 function SearchModal({ setSearch }: any) {
   return (
-    <div className="flex flex-col absolute top-0 z-20 w-full h-[40%] bg-primary-200 items-center">
+    <div className="flex px-2 flex-col justify-center md:justify-start absolute top-0 z-20 w-full h-full md:h-[40%] bg-primary-200 items-center">
       <div className="my-4">
         <img src="branding/color_logo.svg" alt="Rolex Logo" />
       </div>
-      <div className="my-20">
-        <h2 className="text-2xl font-bold tracking-[0.4rem]">
+      <div className="my-4 md:my-20">
+        <h2 className="text-lg md:text-2xl font-bold tracking-[0.4rem] text-center">
           SEARCH THE ROLEX WEBSITE
         </h2>
-        <div className="my-16">
+        <div className="my-4 md:my-16">
           <div className="flex items-center gap-4">
             <input
               type="search"

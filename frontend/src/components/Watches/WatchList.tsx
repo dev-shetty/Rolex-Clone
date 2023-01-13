@@ -2,7 +2,7 @@ import Watch from "./Watch"
 import WatchHeading from "./WatchHeading"
 
 type WatchlistProps = {
-  isMenu: boolean
+  isMenu?: boolean
 }
 
 function WatchList({ isMenu }: WatchlistProps) {

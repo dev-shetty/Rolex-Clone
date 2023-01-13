@@ -2,7 +2,7 @@ type props = {
   img: string
   name: string
   desc: string
-  isMenu: boolean
+  isMenu?: boolean
 }
 
 function Watch({ img, name, desc, isMenu }: props) {
