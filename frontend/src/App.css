@@ -23,12 +23,12 @@ html {
 
 .background-hero {
   height: 100%;
-  background-image: url("background/Rolex_Main_BG.jpg");
+  background-image: url("/background/Rolex_Main_BG.jpg");
 }
 
 .background-quest {
   height: 90%;
-  background-image: url("background/Forest_BG.webp");
+  background-image: url("/background/Forest_BG.webp");
 }
 
 .background-hero::after,

@@ -8,7 +8,7 @@ function Discover() {
         <div className="col-span-2">
           <div className="rounded-2xl overflow-hidden">
             <img
-              src="discover/New-watches-2022.webp"
+              src="/discover/New-watches-2022.webp"
               alt="New Watches 2022"
               className="hover:scale-105 transition-all duration-500"
             />
@@ -21,7 +21,7 @@ function Discover() {
         <div>
           <div className="rounded-2xl overflow-hidden">
             <img
-              src="discover/Rolex-and-cinema.jpg"
+              src="/discover/Rolex-and-cinema.jpg"
               alt="Rolex and Cinema"
               className="hover:scale-105 transition-all duration-500"
             />
@@ -34,7 +34,7 @@ function Discover() {
         <div>
           <div className="rounded-2xl overflow-hidden">
             <img
-              src="discover/Rolex-and-the-arts.jpg"
+              src="/discover/Rolex-and-the-arts.jpg"
               alt="Rolex and the arts"
               className="hover:scale-105 transition-all duration-500"
             />
