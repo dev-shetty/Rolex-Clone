@@ -40,6 +40,10 @@ html {
   z-index: 5;
 }
 
+.bg-blur-watch {
+  background-image: url("/background/Watch_Blur_BG.webp");
+}
+
 .no-scroll::-webkit-scrollbar {
   display: none;
 }
